@@ -118,7 +118,6 @@ public class SerialPortEvent extends SerialClassWrapper
 	 * @see gnu.io.SerialPortEvent#getEventType()
 	 * @see javax.comm.SerialPortEvent#getEventType()
 	 */
-	@SuppressWarnings("restriction")
 	public int getEventType() {
 		return invokeWithoutInvocationException(int.class, "getEventType");
 	}
@@ -131,7 +130,6 @@ public class SerialPortEvent extends SerialClassWrapper
 	 * @see gnu.io.SerialPortEvent#getNewValue()
 	 * @see javax.comm.SerialPortEvent#getNewValue()
 	 */
-	@SuppressWarnings("restriction")
 	public boolean getNewValue() {
 		return invokeWithoutInvocationException(boolean.class, "getNewValue");
 	}
@@ -144,7 +142,6 @@ public class SerialPortEvent extends SerialClassWrapper
 	 * @see gnu.io.SerialPortEvent#getOldValue()
 	 * @see javax.comm.SerialPortEvent#getOldValue()
 	 */
-	@SuppressWarnings("restriction")
 	public boolean getOldValue() {
 		return invokeWithoutInvocationException(boolean.class, "getOldValue");
 	}

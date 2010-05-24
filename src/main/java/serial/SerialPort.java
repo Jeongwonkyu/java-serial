@@ -161,7 +161,6 @@ public class SerialPort extends SerialClassWrapper
 	 * @see gnu.io.SerialPort#close()
 	 * @see javax.comm.SerialPort#close()
 	 */
-	@SuppressWarnings("restriction")
 	public void close() {
 		super.invokeWithoutInvocationException("close");
 	}
@@ -189,7 +188,6 @@ public class SerialPort extends SerialClassWrapper
 	 * @see gnu.io.SerialPort#enableReceiveThreshold(int)
 	 * @see javax.comm.SerialPort#enableReceiveThreshold(int)
 	 */
-	@SuppressWarnings("restriction")
 	public void enableReceiveThreshold(int i) throws UnsupportedCommOperationException
 	{
 		Method method = ReflectionHelper.getMethod(super.getWrappedClass(), "enableReceiveThreshold", int.class);
@@ -227,7 +225,6 @@ public class SerialPort extends SerialClassWrapper
 	 * @see gnu.io.SerialPort#enableReceiveTimeout(int)
 	 * @see javax.comm.SerialPort#enableReceiveTimeout(int)
 	 */
-	@SuppressWarnings("restriction")
 	public void enableReceiveTimeout(int rcvTimeout) throws UnsupportedCommOperationException
 	{
 		Class<?>[] paramTypes = new Class<?>[] { int.class };
@@ -310,7 +307,6 @@ public class SerialPort extends SerialClassWrapper
 	 * @see gnu.io.SerialPort#getInputStream()
 	 * @see javax.comm.SerialPort#getInputStream()
 	 */
-	@SuppressWarnings("restriction")
 	public InputStream getInputStream() throws IOException
 	{		
 		Method method = ReflectionHelper.getMethod(this.getWrappedClass(), "getInputStream");
@@ -347,7 +343,6 @@ public class SerialPort extends SerialClassWrapper
 	 * @see gnu.io.SerialPort#getOutputStream()
 	 * @see javax.comm.SerialPort#getOutputStream()
 	 */
-	@SuppressWarnings("restriction")
 	public OutputStream getOutputStream() throws IOException
 	{
 		Method method = ReflectionHelper.getMethod(this.getWrappedClass(), "getOutputStream");
@@ -371,7 +366,6 @@ public class SerialPort extends SerialClassWrapper
 	 * @see gnu.io.SerialPort#notifyOnBreakInterrupt(boolean)
 	 * @see javax.comm.SerialPort#notifyOnBreakInterrupt(boolean)
 	 */
-	@SuppressWarnings("restriction")
 	public void notifyOnBreakInterrupt(boolean b) {
 		super.invokeWithoutInvocationException("notifyOnBreakInterrupt", new Class<?>[]{boolean.class}, b);
 	}
@@ -391,7 +385,6 @@ public class SerialPort extends SerialClassWrapper
 	 * @see gnu.io.SerialPort#notifyOnDataAvailable(boolean)
 	 * @see javax.comm.SerialPort#notifyOnDataAvailable(boolean)
 	 */
-	@SuppressWarnings("restriction")
 	public void notifyOnDataAvailable(boolean b) {
 		super.invokeWithoutInvocationException("notifyOnDataAvailable", new Class<?>[]{boolean.class}, b);
 	}
@@ -408,7 +401,6 @@ public class SerialPort extends SerialClassWrapper
 	 * @see gnu.io.SerialPort#notifyOnFramingError(boolean)
 	 * @see javax.comm.SerialPort#notifyOnFramingError(boolean)
 	 */
-	@SuppressWarnings("restriction")
 	public void notifyOnFramingError(boolean b) {
 		super.invokeWithoutInvocationException("notifyOnFramingError", new Class<?>[]{boolean.class}, b);
 	}
@@ -419,7 +411,6 @@ public class SerialPort extends SerialClassWrapper
 	 * @see javax.comm.SerialPort#notifyOnCTS(boolean)
 	 * @param b
 	 */
-	@SuppressWarnings("restriction")
 	public void notifyOnCTS(boolean b) {
 		super.invokeWithoutInvocationException("notifyOnCTS", new Class<?>[]{boolean.class}, b);
 	}
@@ -429,7 +420,6 @@ public class SerialPort extends SerialClassWrapper
 	 * @see gnu.io.SerialPort#removeEventListener()
 	 * @see javax.comm.SerialPort#removeEventListener()
 	 */
-	@SuppressWarnings("restriction")
 	public void removeEventListener() {
 		super.invokeWithoutInvocationException("removeEventListener");
 	}
@@ -449,7 +439,6 @@ public class SerialPort extends SerialClassWrapper
 	 * @see gnu.io.SerialPort#notifyOnOutputEmpty(boolean)
 	 * @see javax.comm.SerialPort#notifyOnOutputEmpty(boolean)
 	 */
-	@SuppressWarnings("restriction")
 	public void notifyOnOutputEmpty(boolean b) {
 		super.invokeWithoutInvocationException("notifyOnOutputEmpty", new Class<?>[]{boolean.class}, b);
 	}
@@ -466,7 +455,6 @@ public class SerialPort extends SerialClassWrapper
 	 * @see gnu.io.SerialPort#notifyOnOverrunError(boolean)
 	 * @see javax.comm.SerialPort#notifyOnOverrunError(boolean)
 	 */
-	@SuppressWarnings("restriction")
 	public void notifyOnOverrunError(boolean b) {
 		super.invokeWithoutInvocationException("notifyOnOverrunError", new Class<?>[]{boolean.class}, b);
 	}
@@ -483,7 +471,6 @@ public class SerialPort extends SerialClassWrapper
 	 * @see gnu.io.SerialPort#notifyOnParityError(boolean)
 	 * @see javax.comm.SerialPort#notifyOnParityError(boolean)
 	 */
-	@SuppressWarnings("restriction")
 	public void notifyOnParityError(boolean b) {
 		super.invokeWithoutInvocationException("notifyOnParityError", new Class<?>[]{boolean.class}, b);
 	}
@@ -508,7 +495,6 @@ public class SerialPort extends SerialClassWrapper
 	 * @see gnu.io.SerialPort#setFlowControlMode(int)
 	 * @see javax.comm.SerialPort#setFlowControlMode(int)
 	 */
-	@SuppressWarnings("restriction")
 	public void setFlowControlMode(int flowcontrol) throws UnsupportedCommOperationException
 	{
 		Class<?>[] paramTypes = new Class<?>[] { int.class };
@@ -531,7 +517,6 @@ public class SerialPort extends SerialClassWrapper
 	 * @see gnu.io.SerialPort#setInputBufferSize(int)
 	 * @see javax.comm.SerialPort#setInputBufferSize(int)
 	 */
-	@SuppressWarnings("restriction")
 	public void setInputBufferSize(int serial_buffer_size) {
 		super.invokeWithoutInvocationException("setInputBufferSize", new Class<?>[]{int.class}, serial_buffer_size);
 	}
@@ -545,7 +530,6 @@ public class SerialPort extends SerialClassWrapper
 	 * @see gnu.io.SerialPort#setOutputBufferSize(int)
 	 * @see javax.comm.SerialPort#setOutputBufferSize(int)
 	 */
-	@SuppressWarnings("restriction")
 	public void setOutputBufferSize(int serial_buffer_size) {
 		super.invokeWithoutInvocationException("setOutputBufferSize", new Class<?>[]{int.class}, serial_buffer_size);
 	}
@@ -580,7 +564,6 @@ public class SerialPort extends SerialClassWrapper
 	 * @see gnu.io.SerialPort#setSerialPortParams(int, int, int, int)
 	 * @see javax.comm.SerialPort#setSerialPortParams(int, int, int, int)
 	 */
-	@SuppressWarnings("restriction")
 	public void setSerialPortParams(int baudrate, int dataBits, int stopBits, int parity) throws UnsupportedCommOperationException
 	{
 		Class<?>[] paramTypes = new Class<?>[] { int.class, int.class, int.class, int.class };

@@ -59,7 +59,6 @@ public class CommPortIdentifier extends SerialClassWrapper
 	 * @see gnu.io.CommPortIdentifier#PORT_SERIAL
 	 * @see javax.comm.CommPortIdentifier#PORT_SERIAL
 	 */
-	@SuppressWarnings("restriction")
 	public static final int PORT_SERIAL;
 	static
 	{
@@ -89,7 +88,6 @@ public class CommPortIdentifier extends SerialClassWrapper
 	 * @see gnu.io.CommPortIdentifier#getPortType()
 	 * @see javax.comm.CommPortIdentifier#getPortType()
 	 */
-	@SuppressWarnings("restriction")
 	public int getPortType() {
 		return super.invokeWithoutInvocationException(int.class, "getPortType");
 	}
@@ -101,7 +99,6 @@ public class CommPortIdentifier extends SerialClassWrapper
 	 * @see gnu.io.CommPortIdentifier#getName()
 	 * @see javax.comm.CommPortIdentifier#getName()
 	 */
-	@SuppressWarnings("restriction")
 	public String getName() {
 		return super.invokeWithoutInvocationException(String.class, "getName");
 	}
@@ -111,7 +108,6 @@ public class CommPortIdentifier extends SerialClassWrapper
 	 * @see gnu.io.CommPortIdentifier#isCurrentlyOwned()
 	 * @see javax.comm.CommPortIdentifier#isCurrentlyOwned()
 	 */
-	@SuppressWarnings("restriction")
 	public boolean isCurrentlyOwned() {
 		return super.invokeWithoutInvocationException(boolean.class, "isCurrentlyOwned");
 	}
@@ -121,7 +117,6 @@ public class CommPortIdentifier extends SerialClassWrapper
 	 * @see gnu.io.CommPortIdentifier#getCurrentOwner()
 	 * @see javax.comm.CommPortIdentifier#getCurrentOwner()
 	 */
-	@SuppressWarnings("restriction")
 	public String getCurrentOwner() {
 		return super.invokeWithoutInvocationException(String.class, "getCurrentOwner");
 	}
@@ -134,7 +129,6 @@ public class CommPortIdentifier extends SerialClassWrapper
 	 * @see gnu.io.CommPortIdentifier#open(String, int)
 	 * @see javax.comm.CommPortIdentifier#open(String, int)
 	 */
-	@SuppressWarnings("restriction")
 	public SerialPort open(String appname, int timeout) throws PortInUseException
 	{
 		Class<?>[] paramTypes = new Class<?>[] { String.class, int.class };

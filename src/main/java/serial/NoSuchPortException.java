@@ -7,7 +7,7 @@ package serial;
  * Wrapper for {@link gnu.io.NoSuchPortException} and {@link javax.comm.NoSuchPortException}.
  * @author Alex
  */
-@SuppressWarnings({ "serial", "restriction" })
+@SuppressWarnings("serial")
 public class NoSuchPortException extends SerialException {
 //> STATIC CONSTANTS
 
