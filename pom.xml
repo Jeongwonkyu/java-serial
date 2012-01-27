@@ -3,7 +3,7 @@
 	<groupId>net.frontlinesms.core</groupId>
 	<artifactId>serial</artifactId>
 	<name>Java Serial</name>
-	<version>1.0.1</version>
+	<version>1.0.1-SNAPSHOT</version>
 	<description>Serial Abstraction API for Java</description>
 	
 	<scm>
